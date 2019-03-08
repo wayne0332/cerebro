@@ -135,6 +135,7 @@
   ],
   "homepage": "https://cerebroapp.com",
   "devDependencies": {
+    "webstorm-disable-index": "1.2.0",
     "asar": "0.13.0",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.25.0",
