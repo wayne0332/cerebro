@@ -42,6 +42,12 @@ First, clone the repo via git:
 $ git clone https://github.com/KELiON/cerebro.git cerebro
 ```
 
+And then check xcode tools install:
+
+```bash
+$ xcode-select --install
+```
+
 And then install dependencies:
 
 ```bash
@@ -53,7 +59,8 @@ $ cd cerebro && yarn && cd ./app && yarn && cd ../
 $ yarn run dev
 ```
 
-> Note: requires a node version >=6.x
+> ~~Note: requires a node version >=6.x~~
+> 注意:需要用node 8
 
 ### Resolve common issues
 1. `AssertionError: Current node version is not supported for development` on npm postinstall.
@@ -74,6 +81,7 @@ This error means that node modules with native extensions build with wrong node 
 
 ### Package
 Use this command to build `.app` file:
+(需要日志可以添加命令的环境变量`DEBUG=*`)
 
 ```bash
 $ yarn run package
